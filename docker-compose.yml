@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  ng:
+    container_name: ai-single-cell-sai
+    build: .
+    ports:
+      - "8009:80"
