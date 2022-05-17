@@ -1,0 +1,37 @@
+<mat-toolbar>
+    <span class="title3" >AI Ready Single Cell</span>
+    <span class="large-spacer"></span>
+    <div class="menu">
+        <button mat-button class="button" routerLink="/">
+            Single Cell Dataset
+        </button>
+        <button mat-button class="button" routerLink="dataloader">
+            Data Loader
+        </button>
+        <button mat-button class="button" routerLink="ide">
+            IDE
+        </button>
+        <!-- <button mat-button [matMenuTriggerFor]="ide" routerLinkActive="desktop-active" 
+            #ideTrigger="matMenuTrigger" (mouseenter)="ideTrigger.openMenu()">
+            IDE
+        </button> -->
+        <button mat-button class="button" routerLink="evaluator">
+            Evaluator
+        </button>
+        <button mat-button class="button" routerLink="leaderboard">
+            Leaderboard
+        </button>
+    </div>
+
+    <!-- <mat-menu #ide="matMenu" [overlapTrigger]="false" style="left: 100px;" MenuPositionX="before">
+        <span (mouseleave)="ideTrigger.closeMenu()">
+          <button mat-menu-item routerLink="/ide/tasks">Tasks</button>
+          <button mat-menu-item routerLink="/ide/own_code">Submit your own code</button>
+          <button mat-menu-item routerLink="/ide/debug">Debug</button>
+          <button mat-menu-item routerLink="/ide/exportbatch">Export as Batch Project</button>
+          <button mat-menu-item routerLink="/ide/exportdocker">Export as Docker Project</button>
+    
+        </span>
+      </mat-menu> -->
+</mat-toolbar>
+

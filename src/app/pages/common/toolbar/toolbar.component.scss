@@ -1,0 +1,32 @@
+
+.mat-toolbar{
+    // padding:0 10%; 
+    background-color:#f8f9fa;
+    // height: auto; 
+    flex-wrap:wrap;
+    border-bottom:1px solid #8080808a;  
+  }
+.title3{
+  margin-left: 100px;  
+  text-align: left;
+    //width: 350px;
+}
+
+.button{
+    //background-color: rgb(61, 61, 163);
+    margin: 5px;
+    background-color: transparent;
+}
+.large-spacer {
+    flex: 1;
+  }
+.menu {
+    //font-size: 1.2rem;
+    // margin-bottom: 10px;
+    justify-content: space-evenly;
+    //font-family: "Lato",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+   // margin-left: 1vw;
+    margin-right: 100px;
+  }
