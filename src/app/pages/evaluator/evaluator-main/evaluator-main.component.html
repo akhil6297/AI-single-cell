@@ -1,12 +1,37 @@
-<app-load-steps></app-load-steps>
+<!-- <app-load-steps ></app-load-steps> -->
+<div class="container" style="width:80%; margin:auto">
+    <textarea class="text" rows="15" cols="100">
+       {{textToBeCopied}}
+    </textarea>
+    <!-- <div> -->
+    <button class="copy-icon" (click)="copyText()" title="Copy Steps">
+        <mat-icon>file_copy</mat-icon>
+    </button>
+    <!-- <span class="hoverpop">
+        Copy steps
+    </span> -->
+<!-- </div> -->
+</div>
+
+<div style="width:80%; margin:auto">
 <mat-tab-group mat-align-tabs="start">
     <mat-tab label="Imputation">
+        <ng-template mat-tab-label>
+            <span class="tabs">Imputation</span>
+        </ng-template>
         <app-imputation></app-imputation>
     </mat-tab>
     <mat-tab label="Clustering">
+        <ng-template mat-tab-label>
+            <span class="tabs">Clustering</span>
+        </ng-template>
         <app-clustering></app-clustering>
     </mat-tab>
     <mat-tab label="Report">
+        <ng-template mat-tab-label>
+            <span class="tabs">Report</span>
+        </ng-template>
         <app-report></app-report>
     </mat-tab>
   </mat-tab-group>
+</div>

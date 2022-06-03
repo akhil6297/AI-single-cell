@@ -1,28 +1,43 @@
 <mat-toolbar>
-    <span class="title3" >AI Ready Single Cell</span>
+
+    <a href="/">
+        <span class="title3" >AI Ready Single Cell</span>
+    </a>
     <span class="large-spacer"></span>
-    <div class="menu">
-        <button mat-button class="button" routerLink="/">
+    <!-- <div class="menu">
+        <button mat-button class="button" routerLink="" routerLinkActive="blur">
             Single Cell Dataset
         </button>
-        <button mat-button class="button" routerLink="dataloader">
+        <button mat-button class="button" routerLink="dataloader" routerLinkActive="blur">
             Data Loader
         </button>
-        <button mat-button class="button" routerLink="ide">
+        <button mat-button class="button" routerLink="ide" routerLinkActive="blur">
             IDE
         </button>
-        <!-- <button mat-button [matMenuTriggerFor]="ide" routerLinkActive="desktop-active" 
-            #ideTrigger="matMenuTrigger" (mouseenter)="ideTrigger.openMenu()">
-            IDE
-        </button> -->
         <button mat-button class="button" routerLink="evaluator">
             Evaluator
         </button>
         <button mat-button class="button" routerLink="leaderboard">
             Leaderboard
         </button>
-    </div>
-
+    </div> -->
+    <nav>
+        <a mat-button class="mat-focus-indicator " routerLink="home" routerLinkActive="test">
+            Single Cell Dataset
+        </a> 
+        <a mat-button class="mat-focus-indicator " routerLink="dataloader" routerLinkActive="test">
+            Data Loader
+        </a> 
+        <a mat-button class="mat-focus-indicator " routerLink="ide" routerLinkActive="test">
+            IDE
+        </a> 
+        <a mat-button class="mat-focus-indicator " routerLink="evaluator" routerLinkActive="test">
+            Evaluator
+        </a> 
+        <a mat-button  class="mat-focus-indicator" routerLink="leaderboard" routerLinkActive="test">
+            Leaderboard
+        </a>
+    </nav>
     <!-- <mat-menu #ide="matMenu" [overlapTrigger]="false" style="left: 100px;" MenuPositionX="before">
         <span (mouseleave)="ideTrigger.closeMenu()">
           <button mat-menu-item routerLink="/ide/tasks">Tasks</button>
@@ -34,4 +49,5 @@
         </span>
       </mat-menu> -->
 </mat-toolbar>
+
 

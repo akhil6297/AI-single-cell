@@ -16,6 +16,7 @@ import { TasksComponent } from './pages/ide/tasks/tasks.component';
 import { LeaderboardComponent } from './pages/leaderboard/leaderboard/leaderboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 import { ToolbarComponent } from './pages/common/toolbar/toolbar.component';
 import { SubmitCodeComponent } from './pages/ide/submit-code/submit-code.component';
 import {MatMenuModule} from '@angular/material/menu';
@@ -24,7 +25,8 @@ import { DataByTasksComponent } from './pages/single-cell-dataset/data-by-tasks/
 import { EvaluatorMainComponent } from './pages/evaluator/evaluator-main/evaluator-main.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { IdeMainComponent } from './pages/ide/ide-main/ide-main.component';
-
+import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -54,7 +56,10 @@ import { IdeMainComponent } from './pages/ide/ide-main/ide-main.component';
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
-    MatTabsModule
+    MatTabsModule,
+    ClipboardModule,
+    MatIconModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

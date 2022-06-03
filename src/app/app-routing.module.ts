@@ -15,7 +15,8 @@ import { EvaluatorMainComponent } from './pages/evaluator/evaluator-main/evaluat
 import { IdeMainComponent } from './pages/ide/ide-main/ide-main.component';
 
 const routes: Routes = [
-  { path:'', component: HomeComponent },
+  {path:'',component:HomeComponent},
+  { path:'home', component: HomeComponent },
   { path:'ide', component: IdeMainComponent },
   { path: 'dataloader', component: LoadStepsComponent },
   { path: 'evaluator', component: EvaluatorMainComponent},
