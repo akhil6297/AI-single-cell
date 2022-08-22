@@ -1,0 +1,28 @@
+.submit_data{
+    margin-left:110px;
+    margin-top:10px;
+    margin-right:110px;
+
+    label {
+        padding-right: 15px;
+    }
+    input{
+        width: 800px;
+    }
+    #desc_in {
+        height: 100px;
+        align-content: flex-start;
+    }
+    #paper_in {
+        margin-left: 35px;
+    }
+    #title_in {
+        margin-left: 44px;
+    }
+    #datafiles_in {
+        margin-left: 10px;
+    }
+    #submit{
+        // float: center;
+    }
+}

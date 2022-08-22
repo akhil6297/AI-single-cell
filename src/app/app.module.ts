@@ -27,6 +27,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { IdeMainComponent } from './pages/ide/ide-main/ide-main.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatLeaderboardComponent } from './pages/mat-leaderboard/mat-leaderboard.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -47,7 +51,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     SubmitDataComponent,
     DataByTasksComponent,
     EvaluatorMainComponent,
-    IdeMainComponent
+    IdeMainComponent,
+    MatLeaderboardComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTabsModule,
     ClipboardModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,4 +12,16 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  button_value= false;
+
+  SetDBTValue(value:any){
+    if (value=='dbt') {
+    this.button_value= true;
+    }
+    else if(value=='smod'){
+      this.button_value=false;
+    }
+    console.log(this.button_value);
+  }
+
 }

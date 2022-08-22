@@ -1,0 +1,34 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.leaderboard , .leaderboard2{
+    // margin:0 100px;
+    // border: 1px solid;
+    width: 75%;
+    margin: 20px auto;
+}
+table{
+    background-color: #F5F5F5;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+tbody tr:nth-child(even){
+    background-color: white;
+}
+th{
+    word-wrap: normal;
+    padding: 0.2rem 0.5rem;
+}
+td{
+    padding: 0.2rem 0.5rem;
+}
+.rank{
+    text-align: right;
+}
+.test_score, .val_score, .date, .params{
+    text-align: center;
+}

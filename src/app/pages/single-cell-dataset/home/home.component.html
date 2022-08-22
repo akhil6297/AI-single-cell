@@ -1,7 +1,25 @@
 <div class="right">
-    Configuration 1<br>
-    Configuration 2<br>
-    Configuration 3
+    <div class="content-right">
+        <li>
+            Configuration 1
+        </li>
+        <li>
+            Configuration 2
+        </li>
+        <ul>
+            <li>Sub Configuration 1 </li>
+            <li>Sub Configuration 2 </li>
+            <li>Sub Configuration 3 </li>
+        </ul>
+        <li>
+            Configuration 3
+        </li>
+        <ul>
+            <li>Sub Configuration 1 </li>
+            <li>Sub Configuration 2 </li>
+            <li>Sub Configuration 3 </li>
+            </ul>
+    </div>
 </div>
 <div class="left">
     <!-- <mat-form-field appearance="fill">
@@ -15,14 +33,77 @@
     <button class="search-icon"  title="Search">
         <mat-icon>search</mat-icon>
     </button>
-    
+
+    <div class="models">
+        <h3>Tasks</h3>
+        <button>
+            Tasks
+        </button>
+        <button>
+            Tasks
+        </button>
+        <button>
+            Tasks
+        </button>
+    </div>
+    <div class="Datasets">
+        <h3>Datasets</h3>
+        <button>
+            Dataset 1
+        </button>
+        <button>
+            Dataset 2
+        </button>
+        <button>
+            Dataset 3
+        </button>
+    </div>
 </div>
 <div class="middle">
     <button mat-button class="button" routerLink="/single-cell-dataset/submit_data">
         Submit My Own Data
     </button>
-    <button mat-button class="button" routerLink="/single-cell-dataset/data_by_tasks">
+    <button mat-button class="button" routerLink="/single-cell-dataset/data_by_tasks"> 
         Data by Tasks
     </button>
+    <!-- <div *ngIf="!button_value">
+        <app-submit-data></app-submit-data>
+    </div>
+    <div *ngIf="button_value">
+        <app-data-by-tasks></app-data-by-tasks>
+    </div> -->
+
+    <div class="content-middle">
+        <div class="xgenomics">
+            <h4 style="text-align: left;">10x Genomics</h4>
+            <a href="#">Tissue Architecture</a><br>
+            <a href="#">Spatial Variable Gene</a><br>
+            <a href="#">Rare Cell type</a><br>
+            <a href="#">PBMC cells’ expression and chromatin accessibility</a><br>
+            <a href="#">PBMC scATAC-seq</a><br>
+        </div>
+        <div class="geo">
+            <h4 style="text-align: left;">GEO</h4>
+            <a href="#">SNARE-seq mouse</a><br>
+            <a href="#">BCC scATAC-seq</a><br>
+            <a href="#">GM12878 scRNA-seqe</a><br>
+            <a href="#">CITE-seq data</a><br>
+        </div>
+        <div class="sra">
+            <h4 style="text-align: left;">SRA</h4>
+            <!-- <a href="#">Cell type identification</a>  -->
+        </div>
+        <div class="cancersea">
+            <h4 style="text-align: left;">CancerSEA</h4>
+            <!-- <a href="#">Cell type identification</a> -->
+        </div>
+        <div class="embl-ebi">
+            <h4 style="text-align: left;">EMBL-EBI</h4>
+            <!-- <a href="#">Cell type identification</a> -->
+        </div>
+    </div>
+
+    
+    
 </div>
 
